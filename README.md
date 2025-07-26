@@ -12,7 +12,6 @@ The application features an interactive **Streamlit** web interface, allowing us
   * **Interactive Q\&A**: A user-friendly chat interface to ask questions and receive answers from the RAG pipeline.
   * **Local First**: The entire system operates on a local CPU, eliminating the need for API keys or cloud services.
   * **Open-Source Stack**: Built exclusively with powerful open-source libraries such as **LangChain**, **Ollama**, and **ChromaDB**.
-  * **Source Document Display**: Shows the exact document chunks retrieved from the vector store that were used to generate the answer.
   * **Built-in Benchmarking**: A one-click evaluation module to test the RAG system's performance.
   * **Comprehensive Metrics**: The evaluation suite measures:
       * **Response Accuracy**: Uses BERTScore to calculate the semantic similarity between the generated answer and a ground-truth reference.
@@ -59,7 +58,7 @@ pip install -r requirements.txt
 ### 3\. Install and Set Up Ollama
 
 If you don't have Ollama installed, follow the instructions on the [official Ollama website](https://ollama.com/download).
-Once Ollama is installed, pull the `gemma:2b` model, which is used in this application for its balance of performance and resource efficiency on CPUs.
+Once Ollama is installed, pull the `gemma3:1b` model, which is used in this application for its balance of performance and resource efficiency on CPUs.
 
 ```bash
 ollama pull gemma3:1b
